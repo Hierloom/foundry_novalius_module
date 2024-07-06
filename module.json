@@ -2,7 +2,7 @@
     "name": "novalius-enhancements",
     "title": "Novalius Enhancements",
     "description": "Enhancements for the Novalius system, including new features and more",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "author": "Hierloom",
     "esmodules": [
         "scripts/module.js"
