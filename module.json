@@ -10,5 +10,7 @@
     "styles": [
         "styles/style.css"
     ],
-    "packs": []
+    "packs": [],
+    "manifest": "https://raw.githubusercontent.com/Hierloom/foundry_novalius_module/main/module.json",
+    "download": "https://github.com/Hierloom/foundry_novalius_module/archive/refs/heads/main.zip"
 }
