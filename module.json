@@ -1,0 +1,14 @@
+{
+    "name": "novalius-enhancements",
+    "title": "Novalius enhancements",
+    "description": "Novalius module enhancements",
+    "version": "0.0.1",
+    "author": "Hierloom",
+    "esmodules": [
+        "scripts/module.js"
+    ],
+    "styles": [
+        "styles/style.css"
+    ],
+    "packs": []
+}
