@@ -1,7 +1,7 @@
 {
     "name": "novalius-enhancements",
-    "title": "Novalius enhancements",
-    "description": "Novalius module enhancements",
+    "title": "Novalius Enhancements",
+    "description": "Enhancements for the Novalius system, including new features and more",
     "version": "0.0.1",
     "author": "Hierloom",
     "esmodules": [
