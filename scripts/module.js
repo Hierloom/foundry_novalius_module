@@ -2,10 +2,10 @@ console.log("Novalius Module Loaded");
 
 Hooks.on("ready", () => {
 
-    CONFIG.DND5E.spellSchools.growth = "Growth";
-    CONFIG.DND5E.spellSchools.malice = "Malice";
-    CONFIG.DND5E.spellSchools.test1 = "Test";
-    console.log(CONFIG.DND5E.spellSchools.growth, 'added to spell schools.');
+    CONFIG.DND5E.spellSchools.growth = {
+        label: "Growth",
+        icon: "…",
+        fullKey: "growth", // Full key used in enrichers
+        reference: "" // UUID of journal entry page for rich tooltips
+      };
 });
-
-console.log(CONFIG.DND5E.spellSchools.growth, 'added to spell schools.');
