@@ -263,12 +263,25 @@ const schools = [
     
 ];
 Hooks.on("ready", () => {
-    const sortedSchools = schools.sort((a, b) => a.aspect.localeCompare(b.aspect));
-    for(let i = 0; i < sortedSchools.length; i++) {
-        CONFIG.DND5E.spellSchools[sortedSchools[i].aspect.toLowerCase()] = {
-            label: sortedSchools[i].aspectType + " Aspect: " + sortedSchools[i].aspect,
+    const unwordlySchools = schools.filter(school => school.aspectType === "Unworldly");
+    const worldlySchools = schools.filter(school => school.aspectType === "Worldly");
+    const sortedUnwordly = unwordlySchools.sort((a, b) => a.aspect.localeCompare(b.aspect));
+    const sortedWordly = worldlySchools.sort((a, b) => a.aspect.localeCompare(b.aspect));
+
+    for(let i = 0; i < sortedWordly.length; i++) {
+        CONFIG.DND5E.spellSchools[sortedWordly[i].aspect.toLowerCase()] = {
+            label: sortedWordly[i].aspectType + " Aspect: " + sortedWordly[i].aspect,
             icon: "…",
-            fullKey: sortedSchools[i].aspect.toLowerCase(),
+            fullKey: sortedWordly[i].aspect.toLowerCase(),
+            reference: ""
+        };
+    }
+
+    for(let i = 0; i < sortedUnwordly.length; i++) {
+        CONFIG.DND5E.spellSchools[sortedUnwordly[i].aspect.toLowerCase()] = {
+            label: sortedUnwordly[i].aspectType + " Aspect: " + sortedUnwordly[i].aspect,
+            icon: "…",
+            fullKey: sortedUnwordly[i].aspect.toLowerCase(),
             reference: ""
         };
     }
